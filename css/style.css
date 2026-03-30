@@ -721,3 +721,166 @@ section {
   display: block !important;
   background: white !important;
 }
+
+/* ========== FIX: Remove double scrollbar from hero section ========== */
+
+/* Prevent hero from causing double scroll */
+html {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  position: relative;
+}
+
+/* Fix hero carousel to not cause extra scroll */
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+  min-height: inherit;
+}
+
+/* Remove any margin/padding that might cause double scroll */
+.hero-carousel .carousel {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Ensure carousel controls don't cause overflow */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+/* Fix for mobile screens */
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 85vh;
+    min-height: 500px;
+    max-height: 85vh;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+}
+
+/* Remove any conflicting overflow rules */
+.container,
+.container-fluid,
+.row {
+  overflow-x: visible;
+}
+
+/* Ensure sections don't overlap with hero */
+section:first-of-type {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+/* ========== FIX: Navbar Wrapping on Mobile ========== */
+
+/* Fix navbar container on mobile */
+@media (max-width: 991px) {
+  .navbar .container {
+    display: flex;
+    flex-wrap: nowrap !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Prevent navbar brand from wrapping */
+  .navbar-brand {
+    flex-shrink: 1;
+    min-width: 0;
+    white-space: nowrap;
+  }
+
+  .navbar-brand span {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  /* Fix mobile menu toggle button */
+  .mobile-menu-toggle {
+    flex-shrink: 0;
+    order: 2;
+    margin-left: auto;
+  }
+
+  /* Fix dark mode toggle position */
+  .theme-toggle-nav {
+    flex-shrink: 0;
+    order: 3;
+    margin-left: 0;
+    margin-right: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Hide desktop nav completely on mobile */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Ensure the apply now button is not visible on mobile navbar */
+  .desktop-nav .btn-glow {
+    display: none;
+  }
+}
+
+/* For very small screens (below 400px) */
+@media (max-width: 400px) {
+  .navbar-brand span {
+    font-size: 0.7rem;
+  }
+
+  .navbar-brand img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .theme-toggle-nav {
+    width: 32px;
+    height: 32px;
+  }
+
+  .theme-toggle-nav i {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fix for tablets between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand span {
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle-nav {
+    width: 38px;
+    height: 38px;
+  }
+}
