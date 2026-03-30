@@ -238,7 +238,6 @@ section {
   }
 }
 
-
 .hero-carousel {
   height: 100vh;
 }
@@ -684,4 +683,41 @@ body.dark-mode::-webkit-scrollbar-track {
 
 body.dark-mode::-webkit-scrollbar-thumb {
   background: #4caf50;
+}
+
+/* ========== EMERGENCY FIX: Restore all hidden sections ========== */
+/* This overrides any conflicting CSS rules */
+section {
+  display: block !important;
+  padding: 80px 0 !important;
+  clear: none !important;
+  position: relative !important;
+  overflow-x: hidden !important;
+}
+
+/* Specifically target the main sections to ensure they are visible */
+#about,
+#academics,
+#admissions,
+#gallery,
+#testimonials,
+#contact {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* Restore padding for mobile screens */
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0 !important;
+  }
+}
+
+/* Fix for the stat cards (counters showing 0) */
+.stat-card {
+  display: block !important;
+  background: white !important;
 }
