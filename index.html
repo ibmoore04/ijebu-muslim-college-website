@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes" />
+    <title>
+        Ijebu Muslim College | Excellence in Islamic & Modern Education
+    </title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1630922964060315649/_AO-2LSG_400x400.jpg">
+
+    <!-- Bootstrap CSS + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2347053357203" target="_blank" class="whatsapp-float" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <!-- Off-Canvas Overlay -->
+    <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+
+    <!-- Off-Canvas Menu - Left Side -->
+    <div class="offcanvas-menu" id="offcanvasMenu">
+        <button class="close-btn" id="closeOffcanvas">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mt-5 pt-3">
+            <div class="mb-4 pb-2">
+                <img src="https://pbs.twimg.com/profile_images/1630922964060315649/_AO-2LSG_400x400.jpg" alt="Logo"
+                    width="60" class="rounded-circle mb-3" />
+                <h5 class="text-white">Ijebu Muslim College</h5>
+                <p class="text-white-50 small">Excellence, Discipline, Faith</p>
+            </div>
+            <a class="nav-link-mobile" href="index.html"><i class="fas fa-home me-3"></i> Home</a>
+            <a class="nav-link-mobile" href="about.html"><i class="fas fa-info-circle me-3"></i> About</a>
+            <a class="nav-link-mobile" href="academics.html"><i class="fas fa-graduation-cap me-3"></i> Academics</a>
+            <a class="nav-link-mobile" href="admissions.html"><i class="fas fa-file-alt me-3"></i> Admissions</a>
+            <a href="admissions.html" class="btn btn-mobile" id="mobileApplyBtn"><i class="fas fa-arrow-right me-2"></i>
+                Apply Now</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="https://pbs.twimg.com/profile_images/1630922964060315649/_AO-2LSG_400x400.jpg" alt="Logo"
+                    class="rounded-circle" />
+                <span class="fw-bold">Ijebu Muslim College</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler mobile-menu-toggle" type="button" id="menuToggleBtn">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav ms-auto d-flex align-items-center gap-2">
+                <a class="nav-link-desktop" href="index.html">Home</a>
+                <a class="nav-link-desktop" href="about.html">About</a>
+                <a class="nav-link-desktop" href="academics.html">Academics</a>
+                <a class="nav-link-desktop" href="admissions.html">Admissions</a>
+                <a href="admissions.html" class="btn btn-glow ms-2">Apply Now <i
+                        class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="theme-toggle-nav ms-2" id="darkModeToggleNav"><i class="fas fa-moon"></i></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-carousel">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active hero-slide"
+                    style="background-image: url('https://img.nanobananas.ai/cdn-cgi/image/format=webp,quality=85,progressive=true/outputs/2026/03/27/992wl1ez.jpg');">
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1>Ijebu Muslim College</h1>
+                        <p>Shaping Future Leaders with Islamic Values & Academic Excellence</p>
+                        <div class="hero-buttons">
+                            <a href="admissions.html" class="btn btn-success btn-lg">Apply Now</a>
+                            <a href="about.html" class="btn btn-outline-light btn-lg">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item hero-slide"
+                    style="background-image: url('https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1600');">
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1>Modern Learning Environment</h1>
+                        <p>State-of-the-art classrooms, labs, and digital resources</p>
+                        <div class="hero-buttons">
+                            <a href="academics.html" class="btn btn-success btn-lg">Explore Academics</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item hero-slide"
+                    style="background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1600');">
+                    <div class="overlay"></div>
+                    <div class="hero-content">
+                        <h1>Holistic Development</h1>
+                        <p>Sports, Islamic Studies, and Leadership Programs</p>
+                        <div class="hero-buttons">
+                            <a href="admissions.html" class="btn btn-success btn-lg mb-2">Join Us Today</a>
+                            <a href="about.html" class="btn btn-outline-light btn-lg mb-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- About Section (Condensed on Homepage) -->
+    <section id="about" class="mt-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="section-title position-relative d-inline-block">
+                    About Ijebu Muslim College
+                </h2>
+                <p class="section-subtitle">
+                    Excellence, Discipline, Faith — nurturing minds since 1962
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="card-hover-3d">
+                        <i class="fas fa-landmark fa-3x text-success mb-3"></i>
+                        <h3 class="fw-bold fs-4">Our History</h3>
+                        <p>
+                            Founded in 1962, Ijebu Muslim College blends Western education
+                            with Islamic ethics. We stand as a premier institution in Ogun
+                            State, producing scholars, doctors, engineers, and leaders
+                            across Nigeria and the globe.
+                        </p>
+                        <p class="mb-0">
+                            Our alumni network spans 6 decades of excellence with
+                            state-of-the-art facilities.
+                        </p>
+                        <a href="about.html" class="btn btn-glow mt-3">Read More <i
+                                class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <i class="fas fa-users fa-2x text-success mb-2"></i>
+                                <div class="stat-number counter" data-target="3850">0</div>
+                                <p class="mb-0">+ Students</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <i class="fas fa-chalkboard-user fa-2x text-success mb-2"></i>
+                                <div class="stat-number counter" data-target="145">0</div>
+                                <p class="mb-0">+ Staff</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <i class="fas fa-trophy fa-2x text-success mb-2"></i>
+                                <div class="stat-number counter" data-target="52">0</div>
+                                <p class="mb-0">+ Awards</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <i class="fas fa-globe fa-2x text-success mb-2"></i>
+                                <div class="stat-number counter" data-target="18">0</div>
+                                <p class="mb-0">+ Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section (Condensed) -->
+    <section id="academics" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="section-title position-relative d-inline-block">
+                    Academics & Programs
+                </h2>
+                <p class="section-subtitle">
+                    World-class curriculum with Islamic foundation
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-3" data-aos="flip-left">
+                    <div class="card-hover-3d text-center">
+                        <i class="fas fa-flask fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold fs-6">Science</h5>
+                        <p class="small mb-0">Biology, Chemistry, Physics</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-hover-3d text-center">
+                        <i class="fas fa-book-open fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold fs-6">Arts & Humanities</h5>
+                        <p class="small mb-0">Literature, History, Islamic Studies</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-hover-3d text-center">
+                        <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold fs-6">Commercial</h5>
+                        <p class="small mb-0">Accounting, Economics, Business</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card-hover-3d text-center">
+                        <i class="fas fa-laptop-code fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold fs-6">Computer Science</h5>
+                        <p class="small mb-0">Robotics, AI, Programming</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="academics.html" class="btn btn-glow">View Full Programs <i
+                        class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="section-title position-relative d-inline-block">
+                    What Parents & Alumni Say
+                </h2>
+                <p class="section-subtitle">Trusted by generations</p>
+            </div>
+            <div class="swiper testimonial-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="fas fa-quote-left fa-2x text-success opacity-50"></i>
+                        <p class="mt-3">
+                            "IMC gave my son discipline and academic excellence. The Islamic
+                            environment is unparalleled."
+                        </p>
+                        <h6 class="mt-3 fw-bold">— Mrs. A. Bello, Parent</h6>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fas fa-quote-left fa-2x text-success opacity-50"></i>
+                        <p class="mt-3">
+                            "As an alumna, I'm proud. The teachers are dedicated, and the
+                            facilities are top-notch."
+                        </p>
+                        <h6 class="mt-3 fw-bold">— Dr. Fatima K. (Class of 2005)</h6>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="fas fa-quote-left fa-2x text-success opacity-50"></i>
+                        <p class="mt-3">
+                            "Best decision we made for our child's future. Great balance of
+                            deen and dunya."
+                        </p>
+                        <h6 class="mt-3 fw-bold">— Alhaji S. Ogunleye</h6>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i
+                                class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="section-title position-relative d-inline-block">
+                    Get In Touch
+                </h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-card">
+                        <h4 class="fs-5">
+                            <i class="fas fa-map-marker-alt text-success me-2"></i> Address
+                        </h4>
+                        <p class="small">
+                            Km 5, Ijebu-Ode Road, Opposite Central Mosque, Ijebu-Ode, Ogun
+                            State, Nigeria.
+                        </p>
+                        <h4 class="fs-5 mt-4">
+                            <i class="fas fa-phone-alt text-success me-2"></i> Phone
+                        </h4>
+                        <p class="small">+234 803 456 7890<br />+234 802 345 6789</p>
+                        <h4 class="fs-5 mt-4">
+                            <i class="fas fa-envelope text-success me-2"></i> Email
+                        </h4>
+                        <p class="small">
+                            info@ijebumuslimcollege.edu.ng<br />admissions@imc.edu.ng
+                        </p>
+                        <h4 class="fs-5 mt-4">
+                            <i class="fas fa-clock text-success me-2"></i> Office Hours
+                        </h4>
+                        <p class="small">
+                            Mon - Fri: 8:00 AM - 4:00 PM<br />Sat: 9:00 AM - 1:00 PM
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-card">
+                        <h4 class="fs-5">
+                            <i class="fas fa-paper-plane text-success me-2"></i> Send us a
+                            Message
+                        </h4>
+                        <form id="globalContactForm" class="mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="fullname" placeholder="Full Name"
+                                        required />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" id="emailAddr" placeholder="Email Address"
+                                        required />
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="msgSubject" placeholder="Subject" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" id="msgContent"
+                                        placeholder="Your Message..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-glow w-100">
+                                        Send Message <i class="fas fa-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="contactFeedback" class="mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fs-6 fw-bold">
+                        <i class="fas fa-school me-2"></i> Ijebu Muslim College
+                    </h5>
+                    <p class="small">
+                        Excellence, Discipline, Faith — educating minds, building
+                        character since 1962.
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/376363325733898" class="social-icon-footer"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/IjebuCollege?utm_source=chatgpt.com" class="social-icon-footer"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/explore/locations/289569325/ijebu-ode-muslim-college/"
+                            class="social-icon-footer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akanbi-ibrahim-4ab3043a6" class="social-icon-footer"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/2347053357203" target="_blank" class="social-icon-footer"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fs-6 fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="academics.html">Academics</a></li>
+                        <li class="mb-2"><a href="admissions.html">Admissions</a></li>
+                        <li class="mb-2"><a href="students.html">Students</a></li>
+                        <li class="mb-2"><a href="staff.html">Staff</a></li>
+                        <li class="mb-2"><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fs-6 fw-bold">Resources</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#">Academic Calendar</a></li>
+                        <li class="mb-2"><a href="#">Student Portal</a></li>
+                        <li class="mb-2"><a href="#">Staff Portal</a></li>
+                        <li class="mb-2"><a href="#">E-Library</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fs-6 fw-bold">Newsletter</h5>
+                    <p class="small">Stay updated with school events & news.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-sm" placeholder="Your email"
+                            id="newsEmail" />
+                        <button class="btn btn-success btn-sm" id="subNewsBtn" type="button">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top border-secondary">
+                <p class="small mb-0">
+                    &copy; 2026 Ijebu Muslim College. All rights reserved. Designed with
+                    <i class="fas fa-heart text-danger"></i> for excellence.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
