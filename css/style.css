@@ -443,9 +443,7 @@ section {
   transition: 0.3s;
 }
 
-.testimonial-swiper .swiper-slide:hover {
-  transform: translateY(-5px);
-}
+
 
 .form-control {
   border-radius: 50px;
