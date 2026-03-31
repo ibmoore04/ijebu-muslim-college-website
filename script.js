@@ -185,3 +185,7 @@ document.querySelectorAll(".read-more-link").forEach((link) => {
     alert("Full article coming soon. Stay tuned!");
   });
 });
+
+function sendMail() {
+  window.location.href = "mailto:akanbiibrahimolatunde27@gmail.com";
+}
