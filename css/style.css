@@ -716,11 +716,7 @@ section {
   }
 }
 
-/* Fix for the stat cards (counters showing 0) */
-.stat-card {
-  display: block !important;
-  background: white !important;
-}
+
 
 /* ========== FIX: Remove double scrollbar from hero section ========== */
 
