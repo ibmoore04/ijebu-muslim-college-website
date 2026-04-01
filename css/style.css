@@ -177,7 +177,7 @@ section {
 }
 
 .theme-toggle-nav {
-  background: #e8f5e9;
+  background: #05510b;
   border: none;
   border-radius: 50%;
   width: 39px;
@@ -248,6 +248,8 @@ section {
   background-position: center;
   position: relative;
 }
+
+
 
 /* Dark overlay for readability */
 .overlay {
@@ -442,8 +444,6 @@ section {
   height: auto;
   transition: 0.3s;
 }
-
-
 
 .form-control {
   border-radius: 50px;
@@ -683,16 +683,6 @@ body.dark-mode::-webkit-scrollbar-thumb {
   background: #4caf50;
 }
 
-/* ========== EMERGENCY FIX: Restore all hidden sections ========== */
-/* This overrides any conflicting CSS rules */
-section {
-  display: block !important;
-  padding: 80px 0 !important;
-  clear: none !important;
-  position: relative !important;
-  overflow-x: hidden !important;
-}
-
 /* Specifically target the main sections to ensure they are visible */
 #about,
 #academics,
@@ -709,12 +699,10 @@ section {
 
 /* Restore padding for mobile screens */
 @media (max-width: 768px) {
-  section {
-    padding: 50px 0 !important;
+  .carousel-item{
+    height: 85dvh;
   }
 }
-
-
 
 /* ========== FIX: Remove double scrollbar from hero section ========== */
 
@@ -763,13 +751,12 @@ body {
 /* Fix for mobile screens */
 @media (max-width: 768px) {
   .hero-carousel {
-    height: 85vh;
-    min-height: 500px;
-    max-height: 85vh;
+    height: 85dvh;
+    overflow: hidden;
   }
 
-  body {
-    overflow-y: auto;
+  .hero-slide {
+    height: 100dvh;
   }
 }
 
@@ -782,10 +769,8 @@ body {
 
 /* Ensure sections don't overlap with hero */
 section:first-of-type {
-  margin-top: 0;
-  padding-top: 2rem;
+  padding-top: 0;
 }
-
 /* ========== FIX: Navbar Wrapping on Mobile ========== */
 
 /* Fix navbar container on mobile */
